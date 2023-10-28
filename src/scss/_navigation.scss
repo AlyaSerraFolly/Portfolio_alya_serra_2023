@@ -1,0 +1,12 @@
+.navigation-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px;
+}
+
+.navigation-container {
+  height: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}

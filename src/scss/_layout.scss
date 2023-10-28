@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "RocGrotesk-Medium";
+  src: url(../fonts/Roc-Grotesk-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "RocGrotesk-Regular";
+  src: url(../fonts/Roc-Grotesk-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "RocGrotesk-Thin";
+  src: url(../fonts/Roc-Grotesk-Thin.woff2) format("woff2");
+}
+
+.btn {
+  font-size: 13px;
+}
+
+.container-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.boite-noir {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}

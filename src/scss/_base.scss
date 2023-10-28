@@ -3,6 +3,9 @@
 // ==================================== */
 
 :root {
+  --blanc: #f6f5f4;
+  --bleu: #150df7;
+  --noir: #111111;
 }
 
 /* ====================================
@@ -26,6 +29,13 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+  background-color: var(--blanc);
+  color: var(--noir);
+  font-family: "RocGrotesk-Regular";
+}
+
+main {
+  margin: 60px;
 }
 
 a {
