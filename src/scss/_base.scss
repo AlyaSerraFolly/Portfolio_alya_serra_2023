@@ -62,15 +62,13 @@ body {
   overflow: hidden;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.c-main::-webkit-scrollbar {
+.locked-scroll::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.c-main {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.locked-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .locked-scroll {
@@ -100,6 +98,13 @@ body {
   color: var(--blanc);
 }
 
+.landing-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .landing-hidden {
   display: none;
   position: fixed;
@@ -107,14 +112,14 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #000;
+  background: var(--rouge);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2em;
   opacity: 1;
-  z-index: 999; /* Place la page de landing au-dessus des autres éléments */
+  z-index: 999;
 }
 
 /* ====================================
