@@ -1,0 +1,77 @@
+.locked-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.locked-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.locked-scroll {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: center;
+}
+
+.section-light {
+  background-color: var(--blanc);
+  color: var(--noir);
+}
+.section-dark {
+  background-color: var(--noir);
+  color: var(--blanc);
+}
+
+/* section-1 */
+
+.section-1-container {
+  border: 3px solid red;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.header-image,
+img {
+  margin-top: -5px;
+  display: flex;
+  flex-direction: row;
+  height: 101%;
+  max-block-size: 100vh;
+}
+
+.text-container-1 {
+  font-family: "RocGrotesk-Light";
+  display: inline;
+  position: absolute;
+  left: 0;
+  line-height: 3vw;
+  font-size: 5vw;
+  bottom: 9%;
+  margin: 3%;
+  z-index: 1;
+}
+
+em {
+  font-family: "RocGrotesk-Regular";
+  font-style: normal;
+  font-size: 2.1vw;
+  vertical-align: super;
+}
+
+i {
+  line-height: 5vw;
+  font-style: normal;
+}

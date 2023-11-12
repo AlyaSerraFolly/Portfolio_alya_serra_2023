@@ -33,6 +33,9 @@ body {
   background-color: var(--blanc);
   color: var(--noir);
   font-family: "RocGrotesk-Regular";
+  margin: 0px;
+  padding: 0px;
+  background-color: #d5d5d5;
 }
 
 main {
@@ -43,7 +46,6 @@ a {
   color: inherit;
 }
 
-img,
 video {
   max-inline-size: 100%;
   block-size: auto;
@@ -56,46 +58,6 @@ html {
   padding: 0;
   height: 100%;
   overflow: hidden;
-}
-
-body {
-  overflow: hidden;
-}
-
-.locked-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.locked-scroll {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.locked-scroll {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
-}
-
-.section {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: center;
-}
-.section-light {
-  background-color: var(--blanc);
-  color: var(--noir);
-}
-.section-dark {
-  background-color: var(--noir);
-  color: var(--blanc);
 }
 
 .landing-text-container {
