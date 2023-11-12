@@ -50,8 +50,74 @@ video {
   vertical-align: middle;
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.c-main::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.c-main {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.locked-scroll {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
+.section-light {
+  background-color: var(--blanc);
+  color: var(--noir);
+}
+.section-dark {
+  background-color: var(--noir);
+  color: var(--blanc);
+}
+
+.landing-hidden {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  opacity: 1;
+  z-index: 999; /* Place la page de landing au-dessus des autres éléments */
+}
+
 /* ====================================
 // base rules
-
 
 // ==================================== */
