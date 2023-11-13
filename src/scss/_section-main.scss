@@ -86,12 +86,13 @@ i {
 
 .bottom-navigation-ul a {
   padding-top: 0.2vw;
+  text-decoration: none;
 }
 
 .bottom-navigation-ul {
   padding-top: 1vw;
   font-size: 0.9vw;
-  line-height: 1.9vw;
+  line-height: 1.4vw;
   font-weight: bolder;
   text-transform: uppercase;
   display: flex;
@@ -109,18 +110,32 @@ i {
   padding-right: 17vw;
 }
 
+/* section-2 */
+
+.section-2-container {
+  margin: 3%;
+  margin-top: 6%;
+}
+
+.text-container-2-title {
+}
+
+.title {
+  font-size: 4.7vw;
+  text-transform: uppercase;
+}
+
 /* btn-round */
 .btn-round {
   border: 1px solid var(--blanc);
   padding-left: 1vw;
   padding-right: 1vw;
   border-radius: 5vw;
-  transition: ease-in 0.1;
 }
 
 .btn-round:hover {
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: ease-out 0.1;
   cursor: pointer;
 }

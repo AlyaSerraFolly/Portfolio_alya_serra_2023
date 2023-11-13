@@ -17,3 +17,19 @@
   font-family: "RocGrotesk-Light";
   src: url(../fonts/Roc-Grotesk-Light.woff2) format("woff2");
 }
+
+.cursor {
+  pointer-events: none;
+
+  &__circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: normal;
+    z-index: 1000;
+
+    circle {
+      fill: var(--rouge);
+    }
+  }
+}
