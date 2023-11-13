@@ -1,0 +1,22 @@
+.sortable td {
+  color: white !important;
+  background-color: black;
+}
+
+.sortable th {
+  color: white !important;
+}
+
+table {
+  margin: 3%;
+  height: auto;
+}
+
+thead {
+  width: 400%;
+}
+
+.container-sortable {
+  display: flex;
+  flex-grow: 1;
+}

@@ -1,4 +1,6 @@
 import { gsap, Power2 } from "gsap";
+import "sortable-tablesort/sortable.min.css";
+import "sortable-tablesort/sortable.min.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   // Animation landing text - Apparition fixe
