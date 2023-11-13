@@ -52,14 +52,14 @@ img {
   max-block-size: 100vh;
 }
 
-.text-container-1 {
+.text-container-1-title {
   font-family: "RocGrotesk-Light";
   display: inline;
   position: absolute;
   left: 0;
   line-height: 3vw;
-  font-size: 5vw;
-  bottom: 9%;
+  font-size: 4.7vw;
+  bottom: 6%;
   margin: 3%;
   z-index: 1;
 }
@@ -67,11 +67,60 @@ img {
 em {
   font-family: "RocGrotesk-Regular";
   font-style: normal;
-  font-size: 2.1vw;
+  font-size: 2vw;
   vertical-align: super;
 }
 
 i {
   line-height: 5vw;
   font-style: normal;
+}
+
+.bottom-screen-navigation {
+  font-size: 1.1vw;
+  color: var(--blanc);
+  font-weight: bolder;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+}
+
+.bottom-navigation-ul a {
+  padding-top: 0.2vw;
+}
+
+.bottom-navigation-ul {
+  padding-top: 1vw;
+  font-size: 0.9vw;
+  line-height: 1.9vw;
+  font-weight: bolder;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+}
+
+.btm-works {
+  padding-right: 3vw;
+}
+
+.btm-about {
+  padding-right: 17vw;
+}
+
+/* btn-round */
+.btn-round {
+  border: 1px solid var(--blanc);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: 5vw;
+  transition: ease-in 0.1;
+}
+
+.btn-round:hover {
+  background-color: black;
+  color: white;
+  transition: ease-out 0.1;
+  cursor: pointer;
 }
