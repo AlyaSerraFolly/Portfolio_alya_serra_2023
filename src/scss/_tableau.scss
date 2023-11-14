@@ -1,5 +1,14 @@
-.container-table .table {
-  padding-top: 5vw;
+.container-table .table-2023 {
+  padding-top: 3vw;
+  display: flex;
+  font-size: 20px;
+  flex-direction: row;
+  padding-bottom: 0.5%;
+  border-bottom: 0.5px solid var(--blanc);
+}
+
+.container-table .table-2022 {
+  padding-top: 0vw;
   display: flex;
   font-size: 20px;
   flex-direction: row;
@@ -14,6 +23,9 @@
   width: 20%;
 }
 
+.table-text-container {
+}
+
 .table-text-container .a-2 {
   width: 22%;
 }
@@ -25,6 +37,7 @@
 .container-table {
   font-size: 1.1vw;
   flex-grow: 1;
+  height: 57%;
 }
 
 .table-content {
@@ -39,7 +52,16 @@
   display: block;
   overflow-y: auto !important;
   max-height: 100%;
-  height: 20vw;
+  height: 70%;
+}
+
+.table-2022-container {
+  padding-top: 1%;
+  width: 90%;
+  margin: auto;
+  overflow-y: auto !important;
+  max-height: 100%;
+  height: 70%;
 }
 
 .table-text ul {
