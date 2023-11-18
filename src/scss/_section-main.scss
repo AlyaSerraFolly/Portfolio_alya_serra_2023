@@ -37,11 +37,11 @@
 /* section-1 */
 
 .section-1-container {
-  border: 3px solid red;
   display: flex;
   position: relative;
   flex-grow: 1;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 .header-image,
@@ -49,8 +49,8 @@ img {
   margin-top: -5px;
   display: flex;
   flex-direction: row;
-  height: 101%;
-  max-block-size: 100vh;
+  height: auto;
+  width: auto;
 }
 
 .text-container-1-title {

@@ -28,48 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: Power2.easeInOut,
     delay: 3,
   });
-
-  // MenuBurger
-  const element = document.querySelector(".menu-btn-6");
-
-  function menuBtnFunction(menuBtn) {
-    menuBtn.classList.toggle("active");
-  }
-
-  if (element) {
-    element.addEventListener("click", function () {
-      menuBtnFunction(this);
-    });
-  }
-
-  const menu = document.querySelector(".menu");
-  const overlay = document.querySelector(".menu-overlay");
-
-  const openAnimation = gsap.to(overlay, {
-    duration: 0.5,
-    height: "100%",
-    ease: "power2.inOut",
-    paused: true,
-  });
-
-  gsap.from(".menu-overlay", {
-    opacity: 0,
-    y: -100,
-    height: "100%",
-    duration: 2.5,
-    ease: "power2.inOut",
-  });
-
-  menu.addEventListener("click", () => {
-    const isOpen = menu.classList.toggle("open");
-    overlay.classList.toggle("open");
-
-    if (isOpen) {
-      openAnimation.play();
-    } else {
-    }
-  });
 });
+
+// Cursor
 
 const $cursor = document.querySelector(".cursor__circle");
 const $hover = document.querySelectorAll("a");
@@ -82,8 +43,8 @@ for (let i = 0; i < $hover.length; i++) {
 
 function onMouseMove(e) {
   TweenMax.to($cursor, 0.4, {
-    x: e.pageX - 16,
-    y: e.pageY - 16,
+    x: e.pageX - 27,
+    y: e.pageY - 25,
   });
 }
 
@@ -98,28 +59,27 @@ function onMouseHoverOut() {
   });
 }
 
-function setClasses(el) {
-  const isScrollable = el.scrollHeight > el.clientHeight;
+// BURGER
 
-  // GUARD: If element is not scrollable, remove all classes
-  if (!isScrollable) {
-    el.classList.remove("is-bottom-overflowing", "is-top-overflowing");
-    return;
+var overlay = document.getElementById("overlay");
+var toggleButton = document.getElementById("burger2");
+
+function toggleOverlay() {
+  if (overlay.style.display === "none" || overlay.style.display === "") {
+    overlay.style.display = "flex"; // Utilisation de "flex" pour centrer le contenu
+    overlay.style.height = "0"; // Réinitialisation de la hauteur avant l'animation
+    gsap.to(overlay, { height: "100vh", ease: "power2.inOut", duration: 0.5 });
+  } else {
+    gsap.to(overlay, {
+      height: 0,
+      ease: "power2.inOut",
+      duration: 0.5,
+      onComplete: () => {
+        overlay.style.display = "none";
+      },
+    });
   }
-
-  // Otherwise, the element is overflowing!
-  // Now we just need to find out which direction it is overflowing to (can be both).
-  // One pixel is added to the height to account for non-integer heights.
-  const isScrolledToBottom =
-    el.scrollHeight < el.clientHeight + el.scrollTop + 1;
-  const isScrolledToTop = isScrolledToBottom ? false : el.scrollTop === 0;
-  el.classList.toggle("is-bottom-overflowing", !isScrolledToBottom);
-  el.classList.toggle("is-top-overflowing", !isScrolledToTop);
 }
 
-document.querySelector("#content").addEventListener("scroll", (e) => {
-  const el = e.currentTarget;
-  setClasses(el);
-});
-
-setClasses(document.querySelector("#content"));
+// Ajout d'un écouteur d'événements pour le clic sur la div rouge
+toggleButton.addEventListener("click", toggleOverlay);
