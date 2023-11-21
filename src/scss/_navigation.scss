@@ -12,18 +12,30 @@ ul {
 .li-menu a {
   text-decoration: none;
   color: white;
-  transition: linear 0.2s;
+  transition: all 0.17s;
   font-size: 180px;
   text-transform: uppercase;
 }
 
-.li-menu a:hover {
+.li-menu .illustration:hover,
+.graphic-design:hover,
+.motion-design:hover,
+.contact:hover {
   color: var(--rouge);
-  transform: scale(1.1);
+  padding-left: 10px;
 }
 
 .li-menu .menu-number-work {
   font-size: 50px;
+  position: relative;
+  vertical-align: top;
+  top: -1em;
+  color: var(--rouge);
+}
+
+.copyright-nav {
+  font-size: 17px;
+  opacity: 30%;
 }
 
 .toggle-button {
@@ -34,7 +46,7 @@ ul {
   height: 20px;
   cursor: pointer;
   mix-blend-mode: difference;
-  z-index: 4; /* Ajout de la propriété z-index */
+  z-index: 4;
 }
 
 .overlay {
@@ -50,14 +62,14 @@ ul {
   align-items: center;
   color: white;
   font-size: 24px;
-  z-index: 3; /* Ajout de la propriété z-index */
+  z-index: 3;
 }
 
 .overlay-content {
   text-align: center;
 }
 
-n .menu-link {
+.menu-link {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -127,34 +139,43 @@ n .menu-link {
 .burgers {
   display: flex;
 }
+
 .burger1 input:checked + span:before,
 .burger1 input:checked + span:after {
   top: 0px;
   margin-top: -0.5875rem;
 }
+
 .burger1 input:checked + span {
   background-color: transparent;
 }
+
 .burger1 input:checked + span:before {
   transform: translateY(0.525rem) rotate(45deg);
 }
+
 .burger1 input:checked + span:after {
   transform: translateY(0.525rem) rotate(-45deg);
 }
+
 .burger2 input:checked + span:before,
 .burger2 input:checked + span:after {
   top: 0px;
   margin-top: -0.5875rem;
 }
+
 .burger2 input:checked + span {
   background-color: transparent;
 }
+
 .burger2 input:checked + span:before {
   transform: translateY(0.525rem) rotate(-45deg);
 }
+
 .burger2 input:checked + span:after {
   transform: translateY(0.525rem) rotate(45deg);
 }
+
 .burger3 input:checked + span:before,
 .burger3 input:checked + span:after {
   top: 0px;
@@ -164,23 +185,29 @@ n .menu-link {
   transform: rotate(-360deg);
   background-color: transparent;
 }
+
 .burger3 input:checked + span:before {
   transform: translateY(0.525rem) rotate(-45deg);
 }
+
 .burger3 input:checked + span:after {
   transform: translateY(0.525rem) rotate(45deg);
 }
+
 .burger4 input:checked + span:before,
 .burger4 input:checked + span:after {
   top: 0px;
   margin-top: -0.5875rem;
 }
+
 .burger4 input:checked + span {
   animation: menuCloseMiddle--base 0.5s forwards;
 }
+
 .burger4 input:checked + span:before {
   animation: menuCloseMiddle--before 0.5s forwards;
 }
+
 .burger4 input:checked + span:after {
   animation: menuCloseMiddle--after 0.5s forwards;
 }

@@ -1,0 +1,45 @@
+.sub-cat-full-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-m-1 {
+  background-color: var(--blanc);
+  margin-top: 5%;
+  height: 500px;
+  position: relative;
+}
+
+.title-sub {
+  overflow: hidden;
+}
+
+.title-sub a {
+  bottom: 20%;
+  left: 3%;
+  position: absolute;
+  display: flex;
+}
+
+.text-sub a {
+  max-width: 20%;
+  bottom: 25%;
+  position: absolute;
+  display: block;
+}
+
+.container-big-image {
+  position: relative;
+  padding-left: 0%;
+}
+
+.image-full-sub {
+  overflow: hidden;
+}
+
+.image-full-sub img {
+  overflow: hidden;
+  max-width: 102vw;
+  left: 0;
+  bottom: 0;
+}

@@ -66,8 +66,8 @@ var toggleButton = document.getElementById("burger2");
 
 function toggleOverlay() {
   if (overlay.style.display === "none" || overlay.style.display === "") {
-    overlay.style.display = "flex"; // Utilisation de "flex" pour centrer le contenu
-    overlay.style.height = "0"; // Réinitialisation de la hauteur avant l'animation
+    overlay.style.display = "flex";
+    overlay.style.height = "0";
     gsap.to(overlay, { height: "100vh", ease: "power2.inOut", duration: 0.5 });
   } else {
     gsap.to(overlay, {
@@ -81,5 +81,4 @@ function toggleOverlay() {
   }
 }
 
-// Ajout d'un écouteur d'événements pour le clic sur la div rouge
 toggleButton.addEventListener("click", toggleOverlay);

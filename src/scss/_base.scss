@@ -13,6 +13,11 @@
 // reset rules
 // ==================================== */
 
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 * {
   box-sizing: border-box;
   cursor: none;
@@ -23,6 +28,9 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+}
+
+html .scroll {
   scroll-snap-type: y mandatory;
 }
 
@@ -60,7 +68,6 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 .landing-text-container {
