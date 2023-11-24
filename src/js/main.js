@@ -1,4 +1,8 @@
 import { gsap, Power2 } from "gsap";
+import { nodeName } from "jquery";
+import { ScrollTrigger } from "gsap/src/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 document.addEventListener("DOMContentLoaded", function () {
   // Animation landing text - Apparition fixe
   gsap.from(".landing-text", {
@@ -27,6 +31,27 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 1,
     ease: Power2.easeInOut,
     delay: 3,
+  });
+
+  // gsap.to("#header-image-animation", {
+  //   y: 100,
+  //   ease: "none",
+  //   scrollTrigger: {
+  //     trigger: "#overlay-1",
+  //     start: "top top",
+  //     end: "60% center",
+  //     scrub: true,
+  //     markers: true,
+  //   },
+  // });
+
+  let parallaxImage = document.querySelector("#header-image-animation");
+  let parallaxContainer = document.querySelector(".locked-scroll");
+
+  parallaxContainer.addEventListener("scroll", (e) => {
+    let scrollTop = parallaxContainer.scrollTop;
+
+    parallaxImage.style.top = scrollTop / 50 + "%";
   });
 });
 

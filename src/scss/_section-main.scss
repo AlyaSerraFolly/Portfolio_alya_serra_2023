@@ -42,19 +42,27 @@
   flex-grow: 1;
   justify-content: flex-end;
   overflow: hidden;
+  img {
+    position: absolute;
+  }
+  // background-image: url("../img/alya_dessin_header.png");
+  // background-attachment: fixed;
+  // background-size: 70%;
+  // background-position: 30vw -0.4vh;
+  // background-repeat: no-repeat;
 }
 
 .header-image {
   margin-top: -5px;
-  display: flex;
-  flex-direction: row;
-  height: auto;
+  bottom: 0;
+  height: 101vh;
   width: auto;
+  overflow: hidden;
+  bottom: 0;
 }
 
 @media screen and (max-width: 600px) {
   .header-image {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     height: 101%;
