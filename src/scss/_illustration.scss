@@ -1,0 +1,32 @@
+.section-img {
+  background-image: url("../img/sam_illustration_2023.jpg");
+  background-size: contain;
+}
+
+.section-work {
+  height: 40vw;
+}
+
+.section-title {
+  line-height: 70px;
+}
+
+.section-txt {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.section-desc-work {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-list {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.section-list li {
+  padding-top: 20px;
+}
