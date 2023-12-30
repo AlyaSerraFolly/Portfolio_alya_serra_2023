@@ -5,47 +5,196 @@
     <title>Portfolio2023</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
-  <div class="container-m-1">
-    <div class="container">
-      <div class="row">
-        <div class="col-8 title title-sub"><a>Illustration</a></div>
-        <div class="col-4 text-sub">
-          <a
-            >Here you will find a selection of my motion work, most of it have
-            been made during class project.</a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-5 section-work left-section section-img"></div>
-    <div class="col-7 section-work left-section">
-      <div class="section-txt">
-        <p class="title section-title">
-          PUNK IS<br />
-          NOT DEAD
-        </p>
-        <ul class="section-list">
-          <li>Personal</li>
-          <li>Poster</li>
-          <li>Photoshop 2023</li>
-        </ul>
-        <div class="section-desc-work">
-          <a>Description</a>
-          <a
-            >I’m a junior Interactive Media designer based in Fribourg,
-            Switzerland, and i am currently studying at my second year in Eikon.
-            During these two years i have been able to gain multiples skills
-            such has Motion Design, Graphic Design & UI and most importantly
-            Frontend devloppment skills. I have knowledge in html5 and css with
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <main>
+  <body>
     <extends src="base_layout.html"> </extends>
-  </main>
+    <main class="layout-main">
+      <div class="container-fluid full-container-section">
+        <div class="row">
+          <div class="col-5 nopadding-section">
+            <div class="container-section-category">
+              <a class="title">Illustration</a>
+            </div>
+          </div>
+          <div class="col-7 nopadding-section">
+            <div class="container-section-category text-sub-container">
+              <a class="text-sub"
+                >Here you will find a selection of my motion work, most of it
+                have been made during class project.</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-md-5 col-xl-5 col-sm-12 order-1 section-work left-section section-img nopadding-section custom-background"
+        >
+          <div class="swiper mySwipe custom-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../src/img/sam_illustration_2023.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../src/img/close-uo-sam.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div
+          class="col-md-7 col-xl-7 col-sm-12 order-2 section-work-txt left-section nopadding-section"
+        >
+          <div class="section-txt">
+            <div class="text-section-title-container">
+              <p class="title section-title">
+                PUNK IS<br />
+                NOT DEAD
+              </p>
+              <p class="top-text-section">2023</p>
+            </div>
+            <ul class="section-list">
+              <li>Personal</li>
+              <li>Poster</li>
+              <li>Photoshop 2023</li>
+            </ul>
+            <div class="section-desc-work">
+              <a class="section-desc-work-t">Description</a>
+              <a
+                >Graphic design and Illustration mixed to make a poster of one
+                of my character. I created this piece specialy for printing. I
+                used a really simple artstyle but strong color palet to
+                represent the punk culture.
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-5 col-xl-5 col-sm-12 order-4 order-md-3 order-sm-4 section-work-txt left-section section-img nopadding-section"
+        >
+          <div class="section-txt">
+            <div class="text-section-title-container">
+              <p class="title">Le sorcier</p>
+              <p class="top-text-section">2023</p>
+            </div>
+            <ul class="section-list">
+              <li>Personal</li>
+              <li>T-shirt design</li>
+              <li>Photoshop 2023</li>
+              <li>Serigraphy</li>
+            </ul>
+            <div class="section-desc-work list-1-line">
+              <a class="section-desc-work-t">Description</a>
+              <a
+                >T-shirt designed to make merch for Polymanga 2023 with the
+                theme of D&D. Printed in Serigraphy by the goat Thomas Rouiller.
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-7 col-xl-7 col-sm-12 order-3 order-md-4 order-sm-3 section-work right-section f-1 nopadding"
+        ></div>
+      </div>
+      <div class="row">
+        <div
+          class="col-md-5 col-xl-5 col-sm-12 order-1 section-work left-section section-img nopadding-section custom-background"
+        >
+          <div class="swiper mySwipe custom-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../src/img/burgie_1_illustration.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../src/img/burgie_2_illustration.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div
+          class="col-md-7 col-xl-7 col-sm-12 order-2 section-work-txt left-section nopadding-section"
+        >
+          <div class="section-txt">
+            <div class="text-section-title-container">
+              <p class="title section-title">
+                COLA'S<br />
+                Burger
+              </p>
+              <p class="top-text-section">2022</p>
+            </div>
+            <ul class="section-list">
+              <li>Personal</li>
+              <li>Assets</li>
+              <li>Photoshop 2023</li>
+            </ul>
+            <div class="section-desc-work">
+              <a class="section-desc-work-t">Description</a>
+              <a
+                >Graphic design and Illustration mixed to make a poster of one
+                of my character. I created this piece specialy for printing. I
+                used a really simple artstyle but strong color palet to
+                represent the punk culture.
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-5 col-xl-5 col-sm-12 order-4 order-md-3 order-sm-4 section-work-txt left-section section-img nopadding-section"
+        >
+          <div class="section-txt">
+            <div class="text-section-title-container">
+              <p class="title">Splat'Girl</p>
+              <p class="top-text-section">2023</p>
+            </div>
+            <ul class="section-list">
+              <li>Personal</li>
+              <li>T-shirt design</li>
+              <li>Photoshop 2023</li>
+              <li>Serigraphy</li>
+            </ul>
+            <div class="section-desc-work list-1-line">
+              <a class="section-desc-work-t">Description</a>
+              <a
+                >T-shirt designed to make merch for Polymanga 2023 with the
+                theme of D&D. Printed in Serigraphy by the goat Thomas Rouiller.
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-7 col-xl-7 col-sm-12 order-3 order-md-4 order-sm-3 section-work right-section nopadding"
+        >
+          <div class="swiper mySwipe custom-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide splat-img">
+                <img src="../src/img/alya_goblin.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../src/img/close-uo-sam.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" entry></script>
+    <script
+      src="https://cdn.jsdelivr.net/mousewheel/3.1.13/jquery.mousewheel.min.js"
+      entry
+    ></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollToPlugin.min.js"></script>
+  </body>
 </html>

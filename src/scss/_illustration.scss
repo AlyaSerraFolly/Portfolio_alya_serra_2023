@@ -1,32 +1,144 @@
 .section-img {
-  background-image: url("../img/sam_illustration_2023.jpg");
-  background-size: contain;
+  object-fit: contain;
+}
+
+.section-img img {
+  width: auto;
+  height: 100%;
 }
 
 .section-work {
-  height: 40vw;
+  height: 41vw;
+  display: inline-block;
+
+  @media (max-width: 768px) {
+    height: 97vw;
+  }
+}
+
+.section-work-txt {
+  background-color: var(--blanc);
+
+  @media (max-width: 768px) {
+    height: 80%;
+  }
+}
+
+.f-1 {
+  background-image: url(../img/chat_sorcier.jpg);
+  background-size: contain;
+}
+
+@media only screen and (max-width: 768px) {
+  #first {
+    order: 1;
+  }
+  #second {
+    order: 2;
+  }
+  #third {
+    order: 4;
+  }
+  #fourth {
+    order: 3;
+  }
 }
 
 .section-title {
-  line-height: 70px;
+  line-height: 3.5vw;
+  margin-left: -3px;
+
+  @media (max-width: 768px) {
+    line-height: 7vw;
+    font-size: 8vw;
+  }
 }
 
 .section-txt {
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 18%;
+
+  @media (max-width: 1500px) {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+}
+
+.list-1-line {
+  padding-top: 10%;
 }
 
 .section-desc-work {
-  max-width: 500px;
+  max-width: 80%;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    padding-bottom: 7%;
+  }
 }
 
 .section-list {
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: 3%;
+  padding-bottom: 7vw;
+  text-transform: capitalize;
+
+  @media (max-width: 1200px) {
+    padding-bottom: 2vw;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 10vw;
+  }
 }
 
 .section-list li {
-  padding-top: 20px;
+  padding-top: 1%;
+  text-transform: uppercase;
+}
+
+.section-desc-work-t {
+  padding-bottom: 5%;
+}
+
+.text-section-title-container {
+  display: flex;
+}
+
+.top-text-section {
+  color: var(--rouge);
+  padding-left: 10px;
+}
+
+.nopadding-section {
+  padding: 0 !important;
+}
+
+.container-section-category {
+  margin-top: 30%;
+  margin-left: 18%;
+
+  @media (max-width: 1500px) {
+    margin-left: 10%;
+  }
+}
+
+.layout-main {
+  margin: 0;
+  overflow: hidden;
+}
+
+.custom-background {
+  background: url("../img/sam_illustration_2023.jpg");
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .custom-swiper {
+    display: none;
+    visibility: hidden;
+  }
 }

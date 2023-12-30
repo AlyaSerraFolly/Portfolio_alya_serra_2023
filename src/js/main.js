@@ -107,3 +107,10 @@ function toggleOverlay() {
 }
 
 toggleButton.addEventListener("click", toggleOverlay);
+
+const swiper = new Swiper(".swiper", {
+  autoplay: {
+    disableOnInteraction: true,
+    delay: 4000,
+  },
+});

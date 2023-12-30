@@ -3,22 +3,10 @@
   flex-direction: column;
 }
 
-.container-m-1 {
-  background-color: var(--blanc);
-  margin-top: 5%;
-  height: 500px;
-  position: relative;
-}
-
-.title-sub {
+.full-container-section {
+  background-color: var(--gris);
+  height: 25vw;
   overflow: hidden;
-}
-
-.title-sub a {
-  bottom: 20%;
-  left: 3%;
-  position: absolute;
-  display: flex;
 }
 
 .text-sub a {
@@ -26,6 +14,10 @@
   bottom: 25%;
   position: absolute;
   display: block;
+}
+
+.text-sub-container {
+  width: 400px;
 }
 
 .container-big-image {
