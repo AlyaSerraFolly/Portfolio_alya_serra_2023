@@ -13,16 +13,27 @@ ul {
   text-decoration: none;
   color: white;
   transition: all 0.17s;
-  font-size: 180px;
   text-transform: uppercase;
+}
+
+.li-menu .illustration,
+.graphic-design,
+.motion-design,
+.contact {
+  font-size: 180px;
 }
 
 .li-menu .illustration:hover,
 .graphic-design:hover,
 .motion-design:hover,
+.home:hover,
 .contact:hover {
   color: var(--rouge);
   padding-left: 10px;
+}
+
+.li-menu .home {
+  font-size: 100px !important;
 }
 
 .li-menu .menu-number-work {
