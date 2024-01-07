@@ -45,11 +45,6 @@
   img {
     position: absolute;
   }
-  // background-image: url("../img/alya_dessin_header.png");
-  // background-attachment: fixed;
-  // background-size: 70%;
-  // background-position: 30vw -0.4vh;
-  // background-repeat: no-repeat;
 }
 
 .header-image {
@@ -61,7 +56,7 @@
   bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .header-image {
     margin-left: auto;
     margin-right: auto;
@@ -81,11 +76,26 @@
   font-size: 4.7vw;
   bottom: 6%;
   margin: 3%;
-  z-index: 1;
+  z-index: 10;
 }
 
-@media screen and (max-width: 600px) {
-  .section-1-container-full {
+.gradient-phone {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  @media (max-width: 1200px) {
+    visibility: visible;
+    height: 110%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-container-1-title {
+    line-height: 8vw;
+    font-size: 10vw !important;
   }
 }
 
@@ -155,7 +165,7 @@ i {
   font-size: 4.7vw;
   text-transform: uppercase;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     font-size: 7vw;
   }
 }

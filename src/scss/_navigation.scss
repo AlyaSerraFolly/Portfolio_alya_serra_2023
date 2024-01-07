@@ -20,7 +20,17 @@ ul {
 .graphic-design,
 .motion-design,
 .contact {
-  font-size: 180px;
+  font-size: 160px;
+
+  @media (max-width: 1400px) {
+    font-size: 120px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 70px;
+    line-height: 10px;
+  }
 }
 
 .li-menu .illustration:hover,
@@ -34,6 +44,10 @@ ul {
 
 .li-menu .home {
   font-size: 100px !important;
+
+  @media (max-width: 1000px) {
+    font-size: 50px !important;
+  }
 }
 
 .li-menu .menu-number-work {
@@ -42,6 +56,11 @@ ul {
   vertical-align: top;
   top: -1em;
   color: var(--rouge);
+
+  @media (max-width: 1000px) {
+    font-size: 40px;
+    line-height: 100px;
+  }
 }
 
 .copyright-nav {
