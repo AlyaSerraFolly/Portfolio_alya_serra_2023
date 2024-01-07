@@ -10,17 +10,21 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <div class="load-container">
+      <div class="loading-screen"></div>
+    </div>
+
     <extends src="base_layout.html"> </extends>
-    <main class="layout-main">
-      <div class="container-fluid full-container-section">
-        <div class="row">
-          <div class="col-5 nopadding-section">
+    <div class="container-fluid full-container-section">
+      <header>
+        <div class="row header-category">
+          <div class="col-md-5 col-xl-5 col-sm-12 nopadding-section">
             <div class="container-section-category">
               <a class="title">Illustration</a>
             </div>
           </div>
-          <div class="col-7 nopadding-section">
+          <div class="col-md-7 col-xl-7 col-sm-12 nopadding-section">
             <div class="container-section-category text-sub-container">
               <a class="text-sub"
                 >Here you will find a selection of my motion work, most of it
@@ -29,7 +33,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </header>
+    </div>
+    <main class="layout-main">
       <div class="row">
         <div
           class="col-md-5 col-xl-5 col-sm-12 order-1 section-work left-section section-img nopadding-section custom-background"
@@ -53,7 +59,7 @@
           <div class="section-txt">
             <div class="text-section-title-container">
               <p class="title section-title">
-                PUNK IS<br />
+                PUNK IS<br class="spacement-responsive" />
                 NOT DEAD
               </p>
               <p class="top-text-section">2023</p>
@@ -98,12 +104,16 @@
           </div>
         </div>
         <div
-          class="col-md-7 col-xl-7 col-sm-12 order-3 order-md-4 order-sm-3 section-work right-section f-1 nopadding"
-        ></div>
+          class="col-md-7 col-xl-7 col-sm-12 order-3 order-md-4 order-sm-3 section-work section-work-small dark-slider nopadding"
+        >
+          <div class="swiper-slide">
+            <img src="../src/img/chat_sorcier.jpg" alt="" />
+          </div>
+        </div>
       </div>
       <div class="row">
         <div
-          class="col-md-5 col-xl-5 col-sm-12 order-1 section-work left-section section-img nopadding-section"
+          class="col-md-5 col-xl-5 col-sm-12 order-1 section-work left-section section-img section-work-small nopadding-section"
         >
           <div class="swiper mySwipe custom-swiper">
             <div class="swiper-wrapper">
@@ -124,7 +134,7 @@
           <div class="section-txt">
             <div class="text-section-title-container">
               <p class="title section-title">
-                COLA'S<br />
+                COLA'S<br class="spacement-responsive" />
                 Burger
               </p>
               <p class="top-text-section">2022</p>
@@ -168,7 +178,7 @@
           </div>
         </div>
         <div
-          class="col-md-7 col-xl-7 col-sm-12 order-3 order-md-4 order-sm-3 section-work right-section nopadding"
+          class="col-md-7 col-xl-7 col-sm-12 order-3 order-md-4 order-sm-3 section-work section-work-small right-section nopadding"
         >
           <div class="swiper mySwipe custom-swiper">
             <div class="swiper-wrapper">
@@ -184,7 +194,7 @@
           </div>
         </div>
         <div
-          class="col-md-5 col-xl-5 col-sm-12 order-4 section-work left-section section-img nopadding-section"
+          class="col-md-5 col-xl-5 col-sm-12 order-4 section-work left-section section-work-small section-img nopadding-section"
         >
           <div class="swiper mySwipe custom-swiper">
             <div class="swiper-wrapper">

@@ -14,6 +14,16 @@
   @media (max-width: 768px) {
     height: 97vw;
   }
+
+  @media (max-width: 1000px) {
+    height: 45vw;
+  }
+}
+
+.section-work-small {
+  @media (max-width: 768px) {
+    height: 70vw !important;
+  }
 }
 
 .section-work-txt {
@@ -22,11 +32,6 @@
   @media (max-width: 768px) {
     height: 80%;
   }
-}
-
-.f-1 {
-  background-image: url(../img/chat_sorcier.jpg);
-  background-size: contain;
 }
 
 @media only screen and (max-width: 768px) {
@@ -59,13 +64,9 @@
   margin-left: 18%;
 
   @media (max-width: 1500px) {
-    margin-top: 5%;
+    margin-top: 8%;
     margin-left: 10%;
   }
-}
-
-.list-1-line {
-  padding-top: 10%;
 }
 
 .section-desc-work {
@@ -75,6 +76,10 @@
 
   @media (max-width: 768px) {
     padding-bottom: 7%;
+  }
+
+  @media (max-width: 1500px) {
+    max-width: 90%;
   }
 }
 
@@ -87,6 +92,14 @@
     padding-bottom: 2vw;
   }
 
+  @media (max-width: 1500px) {
+    padding-bottom: 7vw;
+  }
+
+  @media (max-width: 1000px) {
+    padding-bottom: 4vw;
+  }
+
   @media (max-width: 768px) {
     padding-bottom: 10vw;
   }
@@ -95,6 +108,10 @@
 .section-list li {
   padding-top: 1%;
   text-transform: uppercase;
+
+  @media (max-width: 1000px) {
+    padding-top: 0%;
+  }
 }
 
 .section-desc-work-t {
@@ -121,6 +138,10 @@
   @media (max-width: 1500px) {
     margin-left: 10%;
   }
+  @media (max-width: 768px) {
+    margin-top: 0%;
+    margin-left: 6.5%;
+  }
 }
 
 .layout-main {
@@ -128,17 +149,35 @@
   overflow: hidden;
 }
 
+/*
 .custom-background {
   background: url("../img/sam_illustration_2023.jpg");
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
   display: block;
+}*/
+
+@media (max-width: 1500px) {
+  .spacement-responsive p,
+  br {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .spacement-responsive p,
+  br {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
   .custom-swiper {
     display: none;
-    visibility: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*visibility: hidden;*/
   }
 }

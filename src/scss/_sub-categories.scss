@@ -7,6 +7,11 @@
   background-color: var(--gris);
   height: 25vw;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding-top: 23%;
+    height: 45vw;
+  }
 }
 
 .text-sub a {

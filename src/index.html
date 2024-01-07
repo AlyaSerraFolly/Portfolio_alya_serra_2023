@@ -6,157 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <div class="load-container">
+      <div class="loading-screen"></div>
+    </div>
     <div id="landing" class="landing-hidden landing-text">
       <div class="landing-text-container landing-text">Welcome-</div>
     </div>
 
     <header><extends src="base_layout.html"> </extends></header>
-    <div class="locked-scroll">
-      <hr />
-      <section class="section section-light overlay-1">
-        <div id="overlay-1" class="section-1-container">
-          <div class="section-1-container-full">
-            <div class="text-container-1-title">
-              <a>
-                ALYA — SERRA<br />
-                FOLLY<em>( CH )</em> INTERACTIVE<br /><i>MEDIA DESIGNER</i>
-              </a>
-              <div class="bottom-screen-navigation">
-                <ul class="bottom-navigation-ul">
-                  <a class="btm-works" href="#work">selected works</a>
-                  <a class="btm-about" href="#about">about</a>
-                  <a class="btn-round btm-contact" href="#contact">contact</a>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <img
-            id="header-image-animation"
-            class="header-image"
-            src="img/alya_dessin_header.png"
-            alt="illustration Alya"
-          />
-        </div>
-      </section>
-      <hr />
-      <section id="work" class="section section-dark">
-        <div class="section-2-container">
-          <div class="text-container-2-title title">works</div>
-          <div class="container-table">
-            <ul class="table-2023">
-              <a class="a-1">2023</a>
-              <a class="a-2">Type</a>
-              <a class="a-2">Description</a>
-            </ul>
-            <div class="table-content-container">
-              <div class="table-content">
-                <div class="table-text">
-                  <ul class="table-text-container">
-                    <a class="a-1">La Cabane Aux Sorcières</a>
-                    <a class="a-2">Motion Design</a>
-                    <a class="a-2">Animated Logo</a>
-                  </ul>
-                </div>
-                <div class="table-text">
-                  <ul class="table-text-container">
-                    <a class="a-1">Eikonica Website</a>
-                    <a class="a-2">UI & Frontend</a>
-                    <a class="a-2">New identity for Eikonica</a>
-                  </ul>
-                </div>
-                <div class="table-text">
-                  <ul class="table-text-container">
-                    <a class="a-1">Worldwide Happy Day</a>
-                    <a class="a-2">Illustration</a>
-                    <a class="a-2">Illustrated poster</a>
-                  </ul>
-                </div>
-                <div class="table-text">
-                  <ul class="table-text-container">
-                    <a class="a-1">Cola'sBurger characters</a>
-                    <a class="a-2">Illustration</a>
-                    <a class="a-2">Illustration made for Cola'sBurger</a>
-                  </ul>
-                </div>
-                <div class="table-text">
-                  <ul class="table-text-container">
-                    <a class="a-1">LE SORCIER</a>
-                    <a class="a-2">Illustration</a>
-                    <a class="a-2"
-                      >Printed serigraphy t-shirt for Polymanga 2023</a
-                    >
+    <main data-barba="container" data-barba-namespace="home-section">
+      <div class="locked-scroll">
+        <hr />
+        <section class="section section-light overlay-1">
+          <div id="overlay-1" class="section-1-container">
+            <div class="section-1-container-full">
+              <div class="text-container-1-title">
+                <a>
+                  ALYA — SERRA<br />
+                  FOLLY<em>( CH )</em> INTERACTIVE<br /><i>MEDIA DESIGNER</i>
+                </a>
+                <div class="bottom-screen-navigation">
+                  <ul class="bottom-navigation-ul">
+                    <a class="btm-works" href="#work">selected works</a>
+                    <a class="btm-about" href="#about">about</a>
+                    <a class="btn-round btm-contact" href="#contact">contact</a>
                   </ul>
                 </div>
               </div>
             </div>
+            <img
+              id="header-image-animation"
+              class="header-image"
+              src="img/alya_dessin_header.png"
+              alt="illustration Alya"
+            />
           </div>
-          <div class="container-table">
-            <ul class="table-2022">
-              <a class="a-1">2022</a>
-            </ul>
-            <div class="table-2022-container">
-              <div class="table-content">
-                <div class="table-text">
-                  <ul class="table-text-container">
-                    <a class="a-1">Weather App</a>
-                    <a class="a-2">UI </a>
-                    <a class="a-2">UI for a fictive weather mobile app</a>
-                  </ul>
+        </section>
+        <hr />
+        <section id="work" class="section section-dark">
+          <div class="section-2-container">
+            <div class="text-container-2-title title">works</div>
+            <div class="container-table">
+              <ul class="table-2023">
+                <a class="a-1">2023</a>
+                <a class="a-2">Type</a>
+                <a class="a-2">Description</a>
+              </ul>
+              <div class="table-content-container">
+                <div class="table-content">
+                  <div class="table-text">
+                    <ul class="table-text-container">
+                      <a class="a-1">La Cabane Aux Sorcières</a>
+                      <a class="a-2">Motion Design</a>
+                      <a class="a-2">Animated Logo</a>
+                    </ul>
+                  </div>
+                  <div class="table-text">
+                    <ul class="table-text-container">
+                      <a class="a-1">Eikonica Website</a>
+                      <a class="a-2">UI & Frontend</a>
+                      <a class="a-2">New identity for Eikonica</a>
+                    </ul>
+                  </div>
+                  <div class="table-text">
+                    <ul class="table-text-container">
+                      <a class="a-1">Worldwide Happy Day</a>
+                      <a class="a-2">Illustration</a>
+                      <a class="a-2">Illustrated poster</a>
+                    </ul>
+                  </div>
+                  <div class="table-text">
+                    <ul class="table-text-container">
+                      <a class="a-1">Cola'sBurger characters</a>
+                      <a class="a-2">Illustration</a>
+                      <a class="a-2">Illustration made for Cola'sBurger</a>
+                    </ul>
+                  </div>
+                  <div class="table-text">
+                    <ul class="table-text-container">
+                      <a class="a-1">LE SORCIER</a>
+                      <a class="a-2">Illustration</a>
+                      <a class="a-2"
+                        >Printed serigraphy t-shirt for Polymanga 2023</a
+                      >
+                    </ul>
+                  </div>
                 </div>
-                <div class="table-text">
-                  <ul class="table-text-container">
-                    <a class="a-1">Countryside</a>
-                    <a class="a-2">Illustration </a>
-                    <a class="a-2">Corporate Illustration for exercise</a>
-                  </ul>
+              </div>
+            </div>
+            <div class="container-table">
+              <ul class="table-2022">
+                <a class="a-1">2022</a>
+              </ul>
+              <div class="table-2022-container">
+                <div class="table-content">
+                  <div class="table-text">
+                    <ul class="table-text-container">
+                      <a class="a-1">Weather App</a>
+                      <a class="a-2">UI </a>
+                      <a class="a-2">UI for a fictive weather mobile app</a>
+                    </ul>
+                  </div>
+                  <div class="table-text">
+                    <ul class="table-text-container">
+                      <a class="a-1">Countryside</a>
+                      <a class="a-2">Illustration </a>
+                      <a class="a-2">Corporate Illustration for exercise</a>
+                    </ul>
+                  </div>
+                  <div class="shadow"></div>
                 </div>
-                <div class="shadow"></div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <hr />
-      <section id="about" class="section section-light">
-        <div class="section-3-container">
-          <div class="row">
-            <div class="col-6 section-3-content-container nopadding">
-              <div class="title title-section-3">about</div>
-              <p class="section-3-p">
-                My name is Alya, i am 19 years old and i am a junior Interactive
-                Media designer based in the city of Fribourg, Switzerland.I am
-                currently studying at my 3nd year at Eikon.
-              </p>
-              <p class="section-3-p">
-                During my apprentiship, i was able to gain multiple skills such
-                has Motion Design, Graphic Design & UI and most importantly
-                frontend developpment skills. I have knowledge in html5, CSS
-                with basics in Javascripts. I tend to mostly make illustration
-                and motion design during my freetime which i have a lot of
-                pleasure to do.
-              </p>
+        </section>
+        <hr />
+        <section id="about" class="section section-light">
+          <div class="section-3-container">
+            <div class="row">
+              <div class="col-6 section-3-content-container nopadding">
+                <div class="title title-section-3">about</div>
+                <p class="section-3-p">
+                  My name is Alya, i am 19 years old and i am a junior
+                  Interactive Media designer based in the city of Fribourg,
+                  Switzerland.I am currently studying at my 3nd year at Eikon.
+                </p>
+                <p class="section-3-p">
+                  During my apprentiship, i was able to gain multiple skills
+                  such has Motion Design, Graphic Design & UI and most
+                  importantly frontend developpment skills. I have knowledge in
+                  html5, CSS with basics in Javascripts. I tend to mostly make
+                  illustration and motion design during my freetime which i have
+                  a lot of pleasure to do.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-6 nopadding image-alya-main gif">
-          <img src="../src/img/alya_goblin.png" alt="" />
-        </div>
-      </section>
-      <hr />
-      <section id="contact" class="section section-dark">
-        <div class="section-4-container">
-          <p class="section-4-text-top">
-            Want me to join your journey ? Let’s get in touch shawty ! ;-)
-          </p>
-          <div class="text-container-4-title title">contact</div>
-          <div class="text-container-4-p">
-            <p>alya.serra.folly@gmail.com</p>
-            <p>Fribourg, Switzerland</p>
+          <div class="col-6 nopadding image-alya-main gif">
+            <img src="../src/img/alya_goblin.png" alt="" />
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+        <hr />
+        <section id="contact" class="section section-dark">
+          <div class="section-4-container">
+            <p class="section-4-text-top">
+              Want me to join your journey ? Let’s get in touch shawty ! ;-)
+            </p>
+            <div class="text-container-4-title title">contact</div>
+            <div class="text-container-4-p">
+              <p>alya.serra.folly@gmail.com</p>
+              <p>Fribourg, Switzerland</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer></footer>
     <script src="js/main.js" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" entry></script>

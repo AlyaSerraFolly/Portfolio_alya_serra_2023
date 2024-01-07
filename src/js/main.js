@@ -4,21 +4,19 @@ import { ScrollTrigger } from "gsap/src/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Animation landing text - Apparition fixe
   gsap.from(".landing-text", {
     opacity: 0,
-    duration: 0, // Pas de durée pour une apparition instantanée
+    duration: 0,
     ease: Power2.easeInOut,
     onStart: () => {
       document.querySelector(".landing-text").style.display = "block";
     },
   });
 
-  // Animation landing text - Disparition de bas en haut
   gsap.to(".landing-text", {
     opacity: 0,
-    y: "-100%", // Disparaître vers le haut
-    duration: 1.2, // Durée de l'ease-out
+    y: "-100%",
+    duration: 1.2,
     ease: Power2.easeInOut,
     delay: 2,
     onComplete: () => {
@@ -32,18 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: Power2.easeInOut,
     delay: 3,
   });
-
-  // gsap.to("#header-image-animation", {
-  //   y: 100,
-  //   ease: "none",
-  //   scrollTrigger: {
-  //     trigger: "#overlay-1",
-  //     start: "top top",
-  //     end: "60% center",
-  //     scrub: true,
-  //     markers: true,
-  //   },
-  // });
 
   let parallaxImage = document.querySelector("#header-image-animation");
   let parallaxContainer = document.querySelector(".locked-scroll");
@@ -114,3 +100,5 @@ const swiper = new Swiper(".swiper", {
     delay: 4000,
   },
 });
+
+// Loading
