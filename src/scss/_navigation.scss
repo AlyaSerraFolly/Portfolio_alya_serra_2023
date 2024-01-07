@@ -28,8 +28,16 @@ ul {
   }
 
   @media (max-width: 1000px) {
-    font-size: 70px;
+    font-size: 90px;
     line-height: 10px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 40px;
   }
 }
 
@@ -47,6 +55,10 @@ ul {
 
   @media (max-width: 1000px) {
     font-size: 50px !important;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 40px !important;
   }
 }
 
@@ -76,7 +88,7 @@ ul {
   height: 20px;
   cursor: pointer;
   mix-blend-mode: difference;
-  z-index: 4;
+  z-index: 30;
 }
 
 .overlay {
@@ -92,7 +104,7 @@ ul {
   align-items: center;
   color: white;
   font-size: 24px;
-  z-index: 3;
+  z-index: 20;
 }
 
 .overlay-content {
