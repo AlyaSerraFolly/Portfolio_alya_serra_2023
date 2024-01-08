@@ -27,9 +27,10 @@
   height: 100vh;
   display: flex;
   scroll-snap-align: center;
+  overflow: hidden;
 
   @media (max-width: 576px) {
-    height: 80vh;
+    height: 100vh;
   }
 }
 
@@ -236,18 +237,19 @@ i {
 }
 
 .section-3-container {
-  margin: 3.5%;
-}
-
-.image-alya-main img {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  right: 0;
+  padding: 6%;
 }
 
 .image-alya-main {
-  position: relative;
+  background-image: url(../img/alya_goblin.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1200px) {
+    height: 50%;
+  }
 }
 
 .section-3-content-container {
@@ -261,8 +263,13 @@ i {
 }
 
 .title-section-3 {
-  padding-top: 80%;
-  padding-bottom: 20%;
+  padding-top: 400px;
+  padding-bottom: 5vw;
+
+  @media (max-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 1vw;
+  }
 }
 
 .section-4-text-top {
