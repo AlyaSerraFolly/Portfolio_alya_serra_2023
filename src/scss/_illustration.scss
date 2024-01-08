@@ -1,3 +1,13 @@
+.hr-illustration {
+  width: 75%;
+  margin-bottom: 11px;
+}
+
+.arrow-down {
+  height: 16px !important;
+  padding-left: 4px;
+}
+
 .section-img {
   object-fit: contain;
 }
@@ -60,7 +70,7 @@
 }
 
 .section-txt {
-  margin-top: 10%;
+  margin-top: 18%;
   margin-left: 18%;
 
   @media (max-width: 1500px) {
@@ -84,8 +94,8 @@
 }
 
 .section-list {
-  padding-top: 3%;
-  padding-bottom: 7vw;
+  padding-top: 2%;
+  padding-bottom: 8vw;
   text-transform: capitalize;
 
   @media (max-width: 1200px) {
@@ -106,7 +116,8 @@
 }
 
 .section-list li {
-  padding-top: 1%;
+  font-size: 15px;
+  padding-top: 0.3%;
   text-transform: uppercase;
 
   @media (max-width: 1000px) {
@@ -114,8 +125,17 @@
   }
 }
 
-.section-desc-work-t {
-  padding-bottom: 5%;
+.description-size {
+  text-transform: uppercase;
+  padding-bottom: 18px;
+  font-size: 15px !important;
+}
+
+.txt-desc {
+  font-size: 14px;
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 }
 
 .text-section-title-container {

@@ -85,6 +85,10 @@
   transition: 0.17s;
 }
 
+.table-text a {
+  text-decoration: none;
+}
+
 .table-text ul:hover {
   color: var(--rouge);
   padding-left: 10px;

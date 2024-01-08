@@ -1,9 +1,10 @@
 import { gsap, Power2 } from "gsap";
-import { nodeName } from "jquery";
 import { ScrollTrigger } from "gsap/src/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Vos autres animations ici...
+
   gsap.from(".landing-text", {
     opacity: 0,
     duration: 0,
@@ -34,11 +35,26 @@ document.addEventListener("DOMContentLoaded", function () {
   let parallaxImage = document.querySelector("#header-image-animation");
   let parallaxContainer = document.querySelector(".locked-scroll");
 
-  parallaxContainer.addEventListener("scroll", (e) => {
-    let scrollTop = parallaxContainer.scrollTop;
+  function updateParallax() {
+    if (window.innerWidth >= 577) {
+      let scrollTop = parallaxContainer.scrollTop;
+      parallaxImage.style.top = scrollTop / 50 + "%";
+    } else {
+      // Appliquer les styles CSS lorsque la largeur d'écran est inférieure à 564px
+      parallaxImage.style.position = "absolute";
+      parallaxImage.style.bottom = "0";
+      parallaxImage.style.top = "auto";
+    }
+  }
 
-    parallaxImage.style.top = scrollTop / 50 + "%";
-  });
+  // Appel initial de la fonction
+  updateParallax();
+
+  // Gestionnaire d'événements pour l'événement de redimensionnement de la fenêtre
+  window.addEventListener("resize", updateParallax);
+
+  // Gestionnaire d'événements pour l'événement de défilement du conteneur
+  parallaxContainer.addEventListener("scroll", updateParallax);
 });
 
 // Cursor
@@ -54,8 +70,8 @@ for (let i = 0; i < $hover.length; i++) {
 
 function onMouseMove(e) {
   TweenMax.to($cursor, 0.4, {
-    x: e.pageX - 27,
-    y: e.pageY - 25,
+    x: e.clientX - 27,
+    y: e.clientY - 25,
   });
 }
 
