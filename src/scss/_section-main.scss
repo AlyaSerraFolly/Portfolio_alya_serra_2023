@@ -267,7 +267,7 @@ i {
 }
 
 .image-alya-main {
-  background-image: url(../img/alya_goblin.png);
+  background-image: url(../img/alya_photo_cv.webp);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -286,6 +286,11 @@ i {
 .section-3-p {
   padding-bottom: 6%;
   font-size: 16px;
+
+  @media (max-width: 576px) {
+    font-size: 13px;
+    padding-bottom: 4%;
+  }
 }
 
 .title-section-3 {
@@ -295,6 +300,11 @@ i {
   @media (max-width: 1200px) {
     padding-top: 100px;
     padding-bottom: 1vw;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 12px;
+    padding-bottom: 6vw;
   }
 }
 
