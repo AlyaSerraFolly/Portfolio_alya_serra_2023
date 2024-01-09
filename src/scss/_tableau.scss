@@ -1,3 +1,11 @@
+.br-table {
+  display: none;
+
+  @media (max-width: 576px) {
+    display: block;
+  }
+}
+
 .container-table .table-2023 {
   padding-top: 3vw;
   display: flex;
@@ -5,6 +13,11 @@
   flex-direction: row;
   padding-bottom: 0.5%;
   border-bottom: 0.5px solid var(--blanc);
+
+  @media (max-width: 576px) {
+    font-size: 15px;
+    padding-top: 10vw;
+  }
 }
 
 .container-table .table-2022 {
@@ -14,21 +27,41 @@
   flex-direction: row;
   padding-bottom: 0.5%;
   border-bottom: 0.5px solid var(--blanc);
+
+  @media (max-width: 576px) {
+    padding-top: 5vw;
+  }
 }
 
 .a-1 {
   width: 40%;
+  @media (max-width: 576px) {
+    font-size: 12px;
+    width: 43%;
+  }
 }
 .a-2 {
   width: 20%;
+
+  @media (max-width: 576px) {
+    font-size: 13px;
+    width: 26%;
+  }
 }
 
 .table-text-container .a-2 {
   width: 22%;
+  @media (max-width: 576px) {
+    font-size: 12px;
+    width: 33%;
+  }
 }
 
 .table-text-container .a-1 {
   width: 39%;
+  @media (max-width: 576px) {
+    width: 48%;
+  }
 }
 
 .container-table {
@@ -64,6 +97,11 @@
   overflow-y: auto !important;
   max-height: 100%;
   height: 70%;
+
+  @media (max-width: 576px) {
+    height: 100%;
+    width: 95%;
+  }
 }
 
 .table-2022-container {
@@ -83,6 +121,10 @@
   padding-bottom: 0.4vw;
   border-bottom: 0.5px solid var(--blanc);
   transition: 0.17s;
+
+  @media (max-width: 576px) {
+    padding-top: 3%;
+  }
 }
 
 .table-text a {
